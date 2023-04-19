@@ -8,7 +8,7 @@ def filterLowerThanX(date_threshold=365,price_threshold=130):
     
     for i in range(len(data)):
         cur=data[i]
-        ddl_date=trans_datetime_obj(cur['short_maturity_dt'])
+        ddl_date=trans_datetime_obj(cur['maturity_dt'][2:])
         distance=date_distance(ddl_date,now)
         if((distance<=date_threshold) and (cur['price']<price_threshold)):
             # 选出小于180天的

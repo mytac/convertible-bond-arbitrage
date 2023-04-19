@@ -23,13 +23,13 @@ def refresh_data():
    with open('./'+output_path,'w',encoding='utf-8')as file:
         file.write(json.dumps(data,ensure_ascii=False))
 
-   print(data)
+   #print(data)
 
 
 
 def main():
     refresh_data()
     ## 配置策略
-    filterLowerThan130()
+    filterLowerThan90()
 
 main()
