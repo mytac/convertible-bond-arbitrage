@@ -54,6 +54,9 @@ typings/
 .eslintcache
 
 __pycache__
+src/__pycache__
+src/strategy/__pycache__
+
 
 # Microbundle cache
 .rpt2_cache/

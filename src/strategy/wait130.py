@@ -1,6 +1,5 @@
 from utils.index import get_data,get_now_date,date_distance,trans_datetime_obj
 
-
 def filterLowerThanX(date_threshold=365,price_threshold=130):
     data=get_data()
     # print(data)
@@ -22,3 +21,5 @@ def filterLowerThan130():
 # 筛选出还有三年到期的，面值小于100的债
 def filterLowerThan90():
    filterLowerThanX(365*3,100)
+
+    

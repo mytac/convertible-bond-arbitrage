@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import requests
 from strategy.wait130 import filterLowerThan130,filterLowerThan90
+from strategy.stock import around_put_convert_price
 from config import output_path,target_path,cookie
 
 
@@ -29,7 +30,7 @@ def refresh_data():
 
 def main():
     refresh_data()
-    ## 配置策略
-    filterLowerThan90()
+    ## 此处配置策略
+    around_put_convert_price(2)
 
 main()
