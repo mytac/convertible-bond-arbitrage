@@ -32,10 +32,9 @@ python ./src/index.py
 300297*ST蓝盾 现价：0.48 回售价：0.95 距离到期:464天
 ```
 
-4. [当前债的面值小于到期赎回价，且到期时间小于 x 年(默认为 3)，显示年化收益率](./src/strategy/bond.py)(23-5-6 新增)注意有 ST 的，不要碰
+4. [当前债的面值小于到期赎回价，且到期时间小于 x 年(默认为 3)，显示年化收益率 （注意有正股 ST 的不要碰）](./src/strategy/bond.py)(23-5-6 新增)
 
 ```
-debt_safe_redeem
 配置策略 debt_safe_redeem ，运行结果如下
 
 (base) D:\github works\convertible-debt-arbitrage>python ./src/index.py
