@@ -22,4 +22,3 @@ def filterLowerThan130():
 def filterLowerThan90():
    filterLowerThanX(365*3,100)
 
-    

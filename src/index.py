@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 from strategy.wait130 import filterLowerThan130,filterLowerThan90
 from strategy.stock import around_put_convert_price
+from strategy.bond import debt_safe_redeem
 from config import output_path,target_path,cookie
 
 
@@ -31,6 +32,6 @@ def refresh_data():
 def main():
     refresh_data()
     ## 此处配置策略
-    around_put_convert_price(2)
+    debt_safe_redeem()
 
 main()
