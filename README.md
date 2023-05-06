@@ -21,7 +21,7 @@ python ./src/index.py
 3. [正股接近回售价格 3%内且在到期的 2.1 年内](./src/strategy/stock.py) （23-5-6 新增）
 
 ```
-配置 around_put_convert_price，运行结果如下
+配置策略 around_put_convert_price，运行结果如下
 
 (base) D:\github works\convertible-debt-arbitrage>python ./src/index.py
 603278大业股份 现价：8.13 回售价：8.6 距离到期:367天
@@ -32,9 +32,12 @@ python ./src/index.py
 300297*ST蓝盾 现价：0.48 回售价：0.95 距离到期:464天
 ```
 
-4. [【安全第一!】当前债的面值小于到期赎回价，且到期时间小于 x 年(默认为 3)，显示年化收益率](./src/strategy/bond.py)注意有 ST 的，不要碰
+4. [当前债的面值小于到期赎回价，且到期时间小于 x 年(默认为 3)，显示年化收益率](./src/strategy/bond.py)(23-5-6 新增)注意有 ST 的，不要碰
 
 ```
+debt_safe_redeem
+配置策略 debt_safe_redeem ，运行结果如下
+
 (base) D:\github works\convertible-debt-arbitrage>python ./src/index.py
 128100搜特转债 现面值：58.3 到期税前收益：27.56% 平均年化：9.681809432146293% 距离到期:1039天
 113033利群转债 现面值：106.487 到期税前收益：2.19% 平均年化：0.7548158640226629% 距离到期:1059天
