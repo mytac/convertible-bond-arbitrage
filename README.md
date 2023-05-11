@@ -1,4 +1,4 @@
-# convertible-debt-arbitrage
+# convertible-bond-arbitrage
 
 A 股可转债套利，含数据爬取（数据来源集思录），策略等
 
